@@ -13,13 +13,22 @@ window.logout = logout;
 //TESTING END
 
 document.addEventListener('DOMContentLoaded', () => {
-  const store = configureStore();
-// we don't put the store directly on the window because
-// it can be confusing when debugging, sometimes giving you access to state
-// when you shouldn't
-  window.getState = store.getState;
-  window.dispatch = store.dispatch; // just for testing!
+  window.$ = $;
 
   const root = document.getElementById('root');
+
+  let store;
+  if (window.currentUser) {
+    const preloadedState = { session: { currentUser: window.currentUser } };
+    store = configureStore(preloadedState);
+    window.getState = store.getState;
+    window.dispatch = store.dispatch;
+    delete window.currentUser;
+  } else {
+    store = configureStore();
+    window.getState = store.getState;
+    window.dispatch = store.dispatch;
+  }
+
   ReactDOM.render(<Root store={ store } />, root);
 });
