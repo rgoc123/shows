@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { signup, login, logout } from './util/session_api_util';
 
 import configureStore from './store/store';
+import Root from './components/root';
 
 //TESTING START
 window.signup = signup;
@@ -20,5 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
   window.dispatch = store.dispatch; // just for testing!
 
   const root = document.getElementById('root');
-  ReactDOM.render(<h1>Welcome to The Shows</h1>, root);
+  ReactDOM.render(<Root store={ store } />, root);
 });
