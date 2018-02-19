@@ -8,5 +8,6 @@
     json.zip venue.zip
     json.borough venue.borough
     json.neighborhood venue.neighborhood
+    json.category venue.category
   end
 end
