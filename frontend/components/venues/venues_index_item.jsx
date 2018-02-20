@@ -10,10 +10,13 @@ class VenuesIndexItem extends React.Component {
 
   render() {
     return (
-      <li>
+      <div className="venue-index-item">
         <h1>{this.venue.name}</h1>
+        <span>{this.venue.neighborhood}</span>
         <span>{this.venue.address}</span>
-      </li>
+        <span>{this.venue.city}, {this.venue.state} {this.venue.zip}</span>
+        <span>{this.venue.category}</span>
+      </div>
     );
   }
 
