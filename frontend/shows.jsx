@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import { signup, login, logout } from './util/session_api_util';
 import { fetchVenues, fetchVenue } from './actions/venues_actions';
-import { fetchShows, fetchShow } from './util/show_api_util';
+import { fetchShows, fetchShow } from './actions/shows_actions';
 
 import configureStore from './store/store';
 import Root from './components/root';
