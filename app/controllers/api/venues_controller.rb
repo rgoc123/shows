@@ -3,9 +3,6 @@ class Api::VenuesController < ApplicationController
     @venues = Venue.all
   end
 
-  def create
-  end
-
   def show
     @venue = Venue.find_by(params[:id])
   end
