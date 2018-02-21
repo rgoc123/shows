@@ -1,4 +1,4 @@
-@show.each do |show|
+@shows.each do |show|
   json.set! show.id do
     json.id show.id
     json.artist show.artist
