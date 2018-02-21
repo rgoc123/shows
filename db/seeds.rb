@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Venue.destroy_all
-Venue.create!(name: "La Pulperia", address: "1626 2nd Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", category: "Restaurant")
-Venue.create!(name: "Session 73", address: "1359 1st Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", category: "Bar")
-Venue.create!(name: "Five Mile Stone", address: "1640 2nd Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", category: "Bar")
+a = Venue.create!(name: "La Pulperia", address: "1626 2nd Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", category: "Restaurant")
+b = Venue.create!(name: "Session 73", address: "1359 1st Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", category: "Bar")
+c = Venue.create!(name: "Five Mile Stone", address: "1640 2nd Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", category: "Bar")
+
+Shows.destroy_all
