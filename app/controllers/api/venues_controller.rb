@@ -9,6 +9,6 @@ class Api::VenuesController < ApplicationController
 
   private
   def venue_params
-    params.require(:venue).permit(:name, :address, :city, :state, :zip, :borough, :neighborhood)
+    params.require(:venue).permit(:id, :name, :address, :city, :state, :zip, :borough, :neighborhood)
   end
 end
