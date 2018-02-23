@@ -10,7 +10,7 @@ export const mSTP = (state, ownProps) => {
   };
 };
 
-export const mDTP = (dispatch) => {
+export const mDTP = id => dispatch => {
   return {
     fetchVenue: id => dispatch(fetchVenue(id))
   };
