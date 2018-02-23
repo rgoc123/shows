@@ -4,7 +4,7 @@ class Api::VenuesController < ApplicationController
   end
 
   def show
-    @venue = Venue.find_by(params[:id])
+    @venue = Venue.find(params[:id])
   end
 
   private
