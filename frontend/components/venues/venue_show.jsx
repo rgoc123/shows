@@ -5,11 +5,7 @@ import { Link, withRouter } from 'react-router-dom';
 class VenueShow extends React.Component {
 
   componentDidMount() {
-    this.props.fetchVenue(this.props.match.params.businessId);
-  }
-
-  componentDidUpdate() {
-    this.props.fetchVenue(this.props.match.params.businessId);
+    this.props.fetchVenue(this.props.match.params.venueId);
   }
 
   render() {
@@ -19,7 +15,7 @@ class VenueShow extends React.Component {
     if (!venue) {
       return null;
     } else {
-      debugger
+
       return (
         <div className="venues-index-item">
           <h2>{venue.name}</h2>
