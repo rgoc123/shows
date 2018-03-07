@@ -13,6 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-@import "./api/venues.scss";
-@import "./api/shows.scss";
