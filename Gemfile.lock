@@ -131,7 +131,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
-    pg (0.21.0)
+    pg (0.18.4)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -233,7 +233,7 @@ DEPENDENCIES
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   paperclip (= 5.0.0.beta1)
-  pg (~> 0.18)
+  pg (~> 0.18.4)
   pry-rails
   puma (~> 3.7)
   rails (~> 5.1.4)
@@ -246,4 +246,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.1
