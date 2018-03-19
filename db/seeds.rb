@@ -7,9 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Venue.destroy_all
-a = Venue.create!(name: "La Pulperia", address: "1626 2nd Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", category: "Restaurant")
-b = Venue.create!(name: "Session 73", address: "1359 1st Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", category: "Bar")
-c = Venue.create!(name: "Five Mile Stone", address: "1640 2nd Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", category: "Bar")
+a = Venue.create!(name: "La Pulperia", address: "1626 2nd Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", lat: 40.776653, long: -73.952328, category: "Restaurant")
+
+b = Venue.create!(name: "Session 73", address: "1359 1st Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", lat: 40.768463, long: -73.955862, category: "Bar")
+
+c = Venue.create!(name: "Five Mile Stone", address: "1640 2nd Ave", city: "New York", state: "NY", zip: "10075", borough: "Manhattan", neighborhood: "Upper East Side", lat: 40.777241, long: -73.951947, category: "Bar")
 
 Show.destroy_all
 Show.create!(artist: "Fall Out Boy", genre: "Emo", date: "1/1/2018", venue: a.name, venue_id: a.id, start_time: "5:00 pm", end_time: "10:00 pm")

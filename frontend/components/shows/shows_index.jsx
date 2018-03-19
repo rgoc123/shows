@@ -18,7 +18,7 @@ class ShowsIndex extends React.Component {
     return (
       <div>
         {this.createIndex()}
-        <ShowsMap />
+        <ShowsMap shows={this.props.shows} />
       </div>
     );
   }

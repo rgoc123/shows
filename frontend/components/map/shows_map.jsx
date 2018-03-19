@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
+
+import MarkerManager from '../../util/marker_manager';
 
 class ShowsMap extends React.Component {
 
@@ -10,11 +13,11 @@ class ShowsMap extends React.Component {
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
+    this.MarkerManager = new MarkerManager(this.map);
 
-    // this.MarkerManager = new MarkerManager(this.map);
-    // this.props.businesses.forEach(biz => {
-    //   this.MarkerManager.createMarkerFromBusiness(biz);
-    // });
+    this.props.shows.forEach(show => {
+      this.MarkerManager.createMarkerFromBusiness(show);
+    });
     // // this.MarkerManager.updateMarkers(this.props.businesses);
     //
     // google.maps.event.addListener(this.map, 'idle', () => {
