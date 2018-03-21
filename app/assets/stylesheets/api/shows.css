@@ -5,17 +5,25 @@
 }
 
 .shows-index-col-a {
-  width: 49%;
+  width: 50%;
   margin: 0;
 }
 
 .shows-index-col-b {
-  width: 49%;
+  width: 50%;
   margin: 0;
 }
 
 
 /* Shows Index Item */
+.shows-index-item {
+  margin-bottom: 25px;
+}
+
+.shows-index-item h2 {
+  margin: 0 0 10px 0;
+}
+
 .shows-index-item span {
   display: block;
 }
