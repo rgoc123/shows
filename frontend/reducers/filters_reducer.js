@@ -1,6 +1,6 @@
 import merge from 'lodash/merge';
 
-import { UPDATE_FILTER } from '../actions/filter_actions';
+import { UPDATE_FILTER } from '../actions/filters_actions';
 
 const defaultFilters = Object.freeze({
   date: ""
