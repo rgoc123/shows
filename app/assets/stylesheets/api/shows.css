@@ -1,7 +1,21 @@
-// Place all the styles related to the api/shows controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* Shows Index */
+.shows-index-container {
+  width: 960px;
+  display: flex;
+}
 
+.shows-index-col-a {
+  width: 49%;
+  margin: 0;
+}
+
+.shows-index-col-b {
+  width: 49%;
+  margin: 0;
+}
+
+
+/* Shows Index Item */
 .shows-index-item span {
   display: block;
 }

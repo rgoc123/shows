@@ -12,7 +12,7 @@ export default class MarkerManager {
       map: this.map,
       showId: show.id
     });
-    debugger
+    
     // this.markers[marker.showId] = marker;
     return marker;
   }

@@ -14,7 +14,7 @@ class ShowsMap extends React.Component {
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
-    debugger
+    
     this.props.shows.forEach(show => {
       this.MarkerManager.createMarkerFromShow(show);
     });
@@ -40,7 +40,7 @@ class ShowsMap extends React.Component {
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
-    debugger
+    
     this.props.shows.forEach(show => {
       this.MarkerManager.createMarkerFromShow(show);
     });

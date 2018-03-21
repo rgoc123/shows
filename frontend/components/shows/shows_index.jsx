@@ -16,12 +16,14 @@ class ShowsIndex extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
-          {this.createIndex()}
-        </div>
-        <div>
-          <ShowsMap shows={this.props.shows} />
+      <div className="container">
+        <div className="shows-index-container">
+          <div className="shows-index-col-a">
+            {this.createIndex()}
+          </div>
+          <div className="shows-index-col-b">
+            <ShowsMap shows={this.props.shows} />
+          </div>
         </div>
       </div>
     );
