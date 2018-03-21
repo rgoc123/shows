@@ -18,7 +18,7 @@ import Greeting from './greeting/greeting';
 const App = () => (
   <div>
 
-    <h1>The Shows</h1>
+    <h1 className="app-title">The Shows</h1>
 
     <AuthRoute path="/login" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
