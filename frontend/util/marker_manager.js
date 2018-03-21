@@ -6,14 +6,14 @@ export default class MarkerManager {
   }
 
   createMarkerFromShow(show) {
-    const position = new google.maps.LatLng(business.lat, business.long);
+    const position = new google.maps.LatLng(show.venue.lat, show.venue.long);
     const marker = new google.maps.Marker({
       position,
       map: this.map,
       showId: show.id
     });
-
-    this.markers[marker.showId] = marker;
+    debugger
+    // this.markers[marker.showId] = marker;
     return marker;
   }
 

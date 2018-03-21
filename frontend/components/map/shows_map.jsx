@@ -14,9 +14,9 @@ class ShowsMap extends React.Component {
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
-
+    debugger
     this.props.shows.forEach(show => {
-      this.MarkerManager.createMarkerFromBusiness(show);
+      this.MarkerManager.createMarkerFromShow(show);
     });
     // // this.MarkerManager.updateMarkers(this.props.businesses);
     //
@@ -30,6 +30,20 @@ class ShowsMap extends React.Component {
     //   };
     //
     // });
+  }
+
+  componentDidUpdate() {
+    const mapOptions = {
+      center: { lat: 40.759147, lng: -73.9802785 },
+      zoom: 12
+    };
+
+    this.map = new google.maps.Map(this.mapNode, mapOptions);
+    this.MarkerManager = new MarkerManager(this.map);
+    debugger
+    this.props.shows.forEach(show => {
+      this.MarkerManager.createMarkerFromShow(show);
+    });
   }
 
   render() {
