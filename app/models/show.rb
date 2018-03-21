@@ -4,4 +4,8 @@ class Show < ApplicationRecord
 
   belongs_to :venue
 
+  def self.meets_date
+    self.where("date >= ?", Date.today)
+  end
+
 end
