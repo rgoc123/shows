@@ -5,16 +5,16 @@ import { fetchShows } from '../../actions/shows_actions';
 
 import ShowsIndex from './shows_index';
 
-const mapStateToProps = (state) => {
+const mSTP = (state) => {
   return {
     shows: Object.values(state.entities.shows)
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mDTP = (dispatch) => {
   return {
     fetchShows: () => dispatch(fetchShows())
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ShowsIndex);
+export default connect(mSTP, mDTP)(ShowsIndex);

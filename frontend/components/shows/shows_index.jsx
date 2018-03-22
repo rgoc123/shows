@@ -2,6 +2,7 @@ import React from 'react';
 
 import ShowsIndexItem from './shows_index_item';
 import ShowsMap from '../map/shows_map';
+import ShowsFilterFormContainer from '../filter/shows_filter_form_container';
 
 class ShowsIndex extends React.Component {
   componentDidMount() {
@@ -17,6 +18,7 @@ class ShowsIndex extends React.Component {
   render() {
     return (
       <div className="container">
+        <ShowsFilterFormContainer />
         <div className="shows-index-container">
           <div className="shows-index-col-a">
             {this.createIndex()}
