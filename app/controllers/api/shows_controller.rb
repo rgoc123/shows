@@ -1,6 +1,7 @@
 class Api::ShowsController < ApplicationController
   def index
     @shows = (params[:date] == "" || !params[:date]) ? Show.all : Show.meets_date
+
   end
 
   def show
