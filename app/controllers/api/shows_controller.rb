@@ -1,6 +1,6 @@
 class Api::ShowsController < ApplicationController
   def index
-    @shows = params[:date] ? Show.meets_date : Show.all
+    @shows = (params[:date] == "" || !params[:date]) ? Show.all : Show.meets_date
   end
 
   def show
@@ -9,6 +9,6 @@ class Api::ShowsController < ApplicationController
 
   private
   def show_params
-    params.require(:show).permit(:artist, :genre, :date, :venue, :venue_id, :date)
+    params.require(:show).permit(:artist, :genre, :date, :venue, :venue_id)
   end
 end

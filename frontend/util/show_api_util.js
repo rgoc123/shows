@@ -1,7 +1,8 @@
-export const fetchShows = () => {
+export const fetchShows = (filters) => {
   return $.ajax({
     url: '/api/shows',
     method: 'GET',
+    data: filters,
     error: (err) => console.log(err)
   });
 };

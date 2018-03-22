@@ -19,9 +19,9 @@ export const receiveShow = show => {
 };
 
 // Thunks
-export const fetchShows = () => dispatch => {
+export const fetchShows = (filters) => dispatch => {
   return (
-    APIUtilShows.fetchShows().then(shows => (
+    APIUtilShows.fetchShows(filters).then(shows => (
       dispatch(receiveShows(shows))
     ))
   );

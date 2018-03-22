@@ -7,13 +7,11 @@ class ShowsFilterForm extends React.Component {
   }
 
   updateDateFilter() {
-    debugger
     if (!getState().ui.filters.date) {
       this.props.updateFilter("date", Date.now());
     } else {
-      this.props.updateFilter("date", "");
+      this.props.updateFilter("date", null);
     }
-
   }
 
   render() {
