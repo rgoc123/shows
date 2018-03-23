@@ -15,10 +15,26 @@ class ShowsIndex extends React.Component {
     });
   }
 
+  toggleListMap(e) {
+    if (e.target.value === "list") {
+
+    } else if (e.target.value === "map") {
+      
+    }
+  }
+
   render() {
     return (
       <div className="container">
         <ShowsFilterFormContainer />
+        <div className="map-or-list">
+          <input id="list" type="radio" name="map-list" value="list"
+          onClick={}/>
+          <label forHTML="list">List</label>
+          <input id="map" type="radio" name="map-list" value="map"
+          onClick={} />
+          <label forHTML="map">Map</label>
+        </div>
         <div className="shows-index-container">
           <div className="shows-index-col-a">
             {this.createIndex()}
