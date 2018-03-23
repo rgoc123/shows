@@ -4,10 +4,7 @@ class Api::ShowsController < ApplicationController
     shows = (params[:date] == "" || !params[:date]) ? Show.all : Show.meets_date
 
     @shows = []
-    # Need to parse start and end times into Time objects.
-    # See if there's a way to parse "10:00 PM", otherwise
-    # consider putting database as "22:00".
-    # Also look at psql time objects (like floats or strings).
+    
     if params[:now] == "true"
       @shows.concat(shows.where('start_time < ? AND end_time > ?', Time.now, Time.now))
     end
