@@ -29,7 +29,7 @@ class ShowsIndexItem extends React.Component {
   }
 
   render() {
-    debugger
+    
     return (
       <div className="shows-index-item">
         <h2>{this.show.artist}</h2>

@@ -1,4 +1,12 @@
-/* VENUE INDEX ITEM */
-.venues-index-item span {
-  display: block;
+@media (max-width: 640px) {
+
+}
+
+
+@media (min-width: 641px) {
+  /* VENUE INDEX ITEM */
+  .venues-index-item span {
+    display: block;
+  }
+
 }

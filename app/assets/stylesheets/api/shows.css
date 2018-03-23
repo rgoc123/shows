@@ -1,29 +1,50 @@
-/* Shows Index */
-.shows-index-container {
-  width: 960px;
-  display: flex;
+@media (max-width: 640px) {
+
+  /* Shows Index Item */
+  .shows-index-item {
+    margin-bottom: 25px;
+  }
+
+  .shows-index-item h2 {
+    margin: 0 0 10px 0;
+  }
+
+  .shows-index-item span {
+    display: block;
+  }
+
 }
 
-.shows-index-col-a {
-  width: 50%;
-  margin: 0;
-}
 
-.shows-index-col-b {
-  width: 50%;
-  margin: 0;
-}
+@media (min-width: 641px) {
+
+  /* Shows Index */
+  .shows-index-container {
+    width: 960px;
+    display: flex;
+  }
+
+  .shows-index-col-a {
+    width: 50%;
+    margin: 0;
+  }
+
+  .shows-index-col-b {
+    width: 50%;
+    margin: 0;
+  }
 
 
-/* Shows Index Item */
-.shows-index-item {
-  margin-bottom: 25px;
-}
+  /* Shows Index Item */
+  .shows-index-item {
+    margin-bottom: 25px;
+  }
 
-.shows-index-item h2 {
-  margin: 0 0 10px 0;
-}
+  .shows-index-item h2 {
+    margin: 0 0 10px 0;
+  }
 
-.shows-index-item span {
-  display: block;
+  .shows-index-item span {
+    display: block;
+  }
 }

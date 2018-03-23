@@ -1,5 +1,12 @@
-.filter-form-container {
-  width: 100%;
-  height: 100px;
-  background: gray;
+@media (max-width: 640px) {
+
+}
+
+
+@media (min-width: 641px) {
+  .filter-form-container {
+    width: 100%;
+    height: 100px;
+    background: gray;
+  }
 }
