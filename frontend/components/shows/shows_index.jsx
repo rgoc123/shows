@@ -26,16 +26,12 @@ class ShowsIndex extends React.Component {
   }
 
   toggleListMap() {
-
-    const list = document.getElementById("list");
-    const map = document.getElementById("map");
-
-    if (list.checked) {
+    if (document.getElementById("list").checked) {
       this.setState({
         listShow: "block",
         mapShow: "none"
       });
-    } else if (map.checked) {
+    } else if (document.getElementById("map").checked) {
       this.setState({
         listShow: "none",
         mapShow: "block"
