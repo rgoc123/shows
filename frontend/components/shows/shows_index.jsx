@@ -10,8 +10,8 @@ class ShowsIndex extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      listShow: "",
-      mapShow: "hidden",
+      listShow: "block",
+      mapShow: "none",
     };
   }
 
@@ -32,13 +32,13 @@ class ShowsIndex extends React.Component {
 
     if (list.checked) {
       this.setState({
-        listShow: "visible",
-        mapShow: "hidden"
+        listShow: "block",
+        mapShow: "none"
       });
     } else if (map.checked) {
       this.setState({
-        listShow: "hidden",
-        mapShow: "visible"
+        listShow: "none",
+        mapShow: "block"
       });
     }
   }
@@ -56,10 +56,10 @@ class ShowsIndex extends React.Component {
           <label htmlFor="map">Map</label>
         </div>
         <div className="shows-index-container">
-          <div className="shows-index-col-a" style={{visibility: this.state.listShow}}>
+          <div className="shows-index-col-a" style={{display: this.state.listShow}}>
             {this.createIndex()}
           </div>
-          <div className="shows-index-col-b" style={{visibility: this.state.mapShow}}>
+          <div className="shows-index-col-b" style={{display: this.state.mapShow}}>
             <ShowsMap shows={this.props.shows} />
           </div>
         </div>
