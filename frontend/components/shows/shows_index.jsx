@@ -44,12 +44,16 @@ class ShowsIndex extends React.Component {
       <div className="container">
         <ShowsFilterFormContainer />
         <div className="map-or-list">
-          <input id="list" type="radio" name="map-list" value="list" onClick={() => this.toggleListMap()}
-          />
-          <label htmlFor="list">List</label>
-          <input id="map" type="radio" name="map-list" value="map" onClick={() => this.toggleListMap()}
-           />
-          <label htmlFor="map">Map</label>
+          <div className="map-or-list-radio">
+            <input id="list" type="radio" name="map-list" value="list" onClick={() => this.toggleListMap()}
+            />
+            <label htmlFor="list">List</label>
+          </div>
+          <div className="map-or-list-radio">
+            <input id="map" type="radio" name="map-list" value="map" onClick={() => this.toggleListMap()}
+             />
+            <label htmlFor="map">Map</label>
+          </div>
         </div>
         <div className="shows-index-container">
           <div className="shows-index-col-a" style={{display: this.state.listShow}}>
