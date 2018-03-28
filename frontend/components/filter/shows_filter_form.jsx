@@ -6,13 +6,13 @@ class ShowsFilterForm extends React.Component {
     super(props);
   }
 
-  updateDateFilter() {
-    if (!getState().ui.filters.date) {
-      this.props.updateFilter("date", Date.now());
-    } else {
-      this.props.updateFilter("date", null);
-    }
-  }
+  // updateDateFilter() {
+  //   if (!getState().ui.filters.date) {
+  //     this.props.updateFilter("date", Date.now());
+  //   } else {
+  //     this.props.updateFilter("date", null);
+  //   }
+  // }
 
   updateTimeFilter(timeChoice) {
     switch (timeChoice) {
@@ -31,12 +31,6 @@ class ShowsFilterForm extends React.Component {
   render() {
     return (
       <div className="filter-form-container">
-        <div className="filter-date">
-          <input id="filter-date-input"
-          type="checkbox"
-          onChange={() => this.updateDateFilter()} />
-          <label htmlFor="filter-date-input">Today and Later</label>
-        </div>
         <div className="filter-time">
           <input id="filter-time-input-now"
           type="checkbox"
