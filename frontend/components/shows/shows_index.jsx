@@ -45,7 +45,7 @@ class ShowsIndex extends React.Component {
         <ShowsFilterFormContainer />
         <div className="map-or-list">
           <div className="map-or-list-radio">
-            <input id="list" type="radio" name="map-list" value="list" onClick={() => this.toggleListMap()}
+            <input id="list" type="radio" name="map-list" value="list" onClick={() => this.toggleListMap()} defaultChecked
             />
             <label htmlFor="list">List</label>
           </div>
@@ -66,6 +66,7 @@ class ShowsIndex extends React.Component {
       </div>
     );
   }
+
 }
 
 export default ShowsIndex;
