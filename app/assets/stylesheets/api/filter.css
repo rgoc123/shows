@@ -8,6 +8,9 @@
     border: 1px black solid;
     width: 33.3%;
     position: relative;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
   }
 
   .filter-time-checkbox input[type=checkbox] {
@@ -28,7 +31,7 @@
 
   .filter-time-checkbox label {
     position: absolute;
-    left: 30px;
+    left: 34%;
   }
 
 }

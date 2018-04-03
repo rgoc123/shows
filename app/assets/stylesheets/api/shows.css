@@ -17,6 +17,9 @@
     position: relative;
     width: 50%;
     border: 1px black solid;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
   }
 
   .map-or-list-radio input[type=radio] {
@@ -26,7 +29,6 @@
     margin: 0;
   }
 
-
   .map-or-list-radio input[type=radio]:checked {
     outline-color: white;
     background-color: green;
@@ -34,7 +36,7 @@
 
   .map-or-list-radio label {
     position: absolute;
-    left: 60px;
+    left: 40%;
   }
 
   .shows-index-col-a {
