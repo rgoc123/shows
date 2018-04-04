@@ -25,7 +25,7 @@ const App = () => (
     <ProtectedRoute path="/greeting" component={Greeting} />
     <Route exact path="/venues" component={VenuesIndexContainer} />
     <Route exact path="/venues/:venueId" component={VenueShowContainer} />
-    <Route path="/shows" component={ShowsIndexContainer} />
+    <Route path="/" component={ShowsIndexContainer} />
 
   </div>
 );
