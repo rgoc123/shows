@@ -4,8 +4,9 @@ class Show < ApplicationRecord
 
   belongs_to :venue
 
-  def self.meets_date
-    self.where("date >= ?", Date.today)
+  def now?
+    self.start_time.hour <= Time.now.utc.hour
+    # && self.end_time.hour > Time.now.hour
   end
 
 end

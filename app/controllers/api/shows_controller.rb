@@ -1,12 +1,12 @@
 class Api::ShowsController < ApplicationController
   def index
 
-    shows = (params[:date] == "" || !params[:date]) ? Show.all : Show.meets_date
+    shows = Show.all
 
     @shows = []
-    
     if params[:now] == "true"
-      @shows.concat(shows.where('start_time < ? AND end_time > ?', Time.now, Time.now))
+      # @shows.concat(shows.where('start_time < ? AND end_time > ?', Time.now.hour, Time.now.hour))
+      shows.each {|show| @shows.push(show) if show.now?}
     end
     if params[:soon] == "true"
       @shows.concat(shows.where('start_time > ? AND start_time < ?', Time.now, Time.now + 3600))
