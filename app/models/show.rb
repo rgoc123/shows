@@ -5,8 +5,7 @@ class Show < ApplicationRecord
   belongs_to :venue
 
   def now?
-    self.start_time.hour <= Time.now.utc.hour
-    # && self.end_time.hour > Time.now.hour
+    self.start_time.localtime <= Time.now && self.end_time.localtime > Time.now
   end
 
 end

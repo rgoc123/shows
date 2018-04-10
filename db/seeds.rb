@@ -18,5 +18,5 @@ Show.create!(artist: "Fall Out Boy", genre: "Emo", date: Date.today, venue: a.na
 Show.create!(artist: "Fall Out Boy", genre: "Emo", date: Date.today, venue: b.name, venue_id: b.id, start_time: "12:00 AM EDT", end_time: "08:00 AM EDT")
 Show.create!(artist: "Red Hot Chili Peppers", genre: "Rock", date: Date.today, venue: c.name, venue_id: c.id, start_time: "8:00 AM EDT", end_time: "04:00 PM EDT")
 Show.create!(artist: "Red Hot Chili Peppers", genre: "Rock", date: Date.today, venue: a.name, venue_id: a.id, start_time: "8:00 AM EDT", end_time: "04:00 PM EDT")
-Show.create!(artist: "Grouplove", genre: "Rock", date: Date.today, venue: b.name, venue_id: b.id, start_time: "04:00 PM EDT", end_time: "12:00 AM EDT")
-Show.create!(artist: "Grouplove", genre: "Rock", date: Date.today, venue: c.name, venue_id: c.id, start_time: "04:00 PM EDT", end_time: "12:00 AM EDT")
+Show.create!(artist: "Grouplove", genre: "Rock", date: Date.today, venue: b.name, venue_id: b.id, start_time: "04:00 PM EDT", end_time: "11:59 PM EDT")
+Show.create!(artist: "Grouplove", genre: "Rock", date: Date.today, venue: c.name, venue_id: c.id, start_time: "04:00 PM EDT", end_time: "11:59 PM EDT")
