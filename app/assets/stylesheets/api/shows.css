@@ -104,11 +104,7 @@
     display: block;
   }
 
-// Place all the styles related to the api/shows controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-.shows-index-item span {
-  display: block;
+  .shows-index-item span {
+    display: block;
 
 }
