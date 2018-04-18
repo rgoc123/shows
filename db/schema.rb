@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180322054654) do
+=======
+ActiveRecord::Schema.define(version: 20180221210618) do
+>>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,8 +25,13 @@ ActiveRecord::Schema.define(version: 20180322054654) do
     t.string "date", null: false
     t.string "venue", null: false
     t.integer "venue_id", null: false
+<<<<<<< HEAD
     t.datetime "start_time"
     t.datetime "end_time"
+=======
+    t.string "start_time"
+    t.string "end_time"
+>>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -53,8 +62,11 @@ ActiveRecord::Schema.define(version: 20180322054654) do
     t.string "website"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.float "lat"
     t.float "long"
+=======
+>>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
   end
 
 end

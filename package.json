@@ -23,7 +23,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "webpack": "webpack --watch",
+=======
+>>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
     "postinstall": "webpack"
   },
   "keywords": [],

@@ -58,7 +58,11 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.5.0)
+<<<<<<< HEAD
     binding_of_caller (0.8.0)
+=======
+    binding_of_caller (0.7.3)
+>>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (10.0.0)
