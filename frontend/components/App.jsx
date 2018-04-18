@@ -20,8 +20,6 @@ const App = () => (
 
     <h1 className="app-title">The Shows</h1>
 
-    <h1>The Shows</h1>
-
     <AuthRoute path="/login" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
     <ProtectedRoute path="/greeting" component={Greeting} />
