@@ -29,11 +29,11 @@ class ShowsIndexItem extends React.Component {
   }
 
   render() {
-    
+
     return (
       <div className="shows-index-item">
-        <h2>{this.show.artist}</h2>
-        <span>{this.show.venue.name}</span>
+        <h2>{this.show.venue.name}</h2>
+        <span>{this.show.artist}</span>
         <span>{this.show.date}</span>
         <span>{this.startTime()} - {this.endTime()}</span>
         <span>{this.show.genre}</span>
