@@ -4,12 +4,6 @@ export const fetchShows = (filters) => {
     url: '/api/shows',
     method: 'GET',
     data: filters,
-
-export const fetchShows = () => {
-  return $.ajax({
-    url: '/api/shows',
-    method: 'GET',
-
     error: (err) => console.log(err)
   });
 };

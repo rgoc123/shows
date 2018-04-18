@@ -16,21 +16,11 @@ class ShowsIndex extends React.Component {
     };
   }
 
-
-
-import ShowsIndexItem from './shows_index_item';
-
-class ShowsIndex extends React.Component {
-
   componentDidMount() {
     this.props.fetchShows();
   }
 
-
   createIndex() {
-
-  render() {
-
     return this.props.shows.map(show => {
       return <ShowsIndexItem key={show.id} show={show} />;
     });
