@@ -22,9 +22,6 @@ export const receiveShow = show => {
 export const fetchShows = (filters) => dispatch => {
   return (
     APIUtilShows.fetchShows(filters).then(shows => (
-export const fetchShows = () => dispatch => {
-  return (
-    APIUtilShows.fetchShows().then(shows => (
       dispatch(receiveShows(shows))
     ))
   );
