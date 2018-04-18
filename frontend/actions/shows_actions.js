@@ -19,15 +19,12 @@ export const receiveShow = show => {
 };
 
 // Thunks
-<<<<<<< HEAD
 export const fetchShows = (filters) => dispatch => {
   return (
     APIUtilShows.fetchShows(filters).then(shows => (
-=======
 export const fetchShows = () => dispatch => {
   return (
     APIUtilShows.fetchShows().then(shows => (
->>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
       dispatch(receiveShows(shows))
     ))
   );

@@ -1,6 +1,6 @@
 class Api::ShowsController < ApplicationController
   def index
-<<<<<<< HEAD
+
 
     shows = Show.all
 
@@ -21,9 +21,9 @@ class Api::ShowsController < ApplicationController
 
     return @shows
 
-=======
+
     @shows = Show.all
->>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
+
   end
 
   def show
@@ -34,9 +34,9 @@ class Api::ShowsController < ApplicationController
   def show_params
     params.require(:show).permit(:artist, :genre, :date, :venue, :venue_id)
   end
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
+
+
+
 end

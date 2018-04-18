@@ -18,22 +18,19 @@ import Greeting from './greeting/greeting';
 const App = () => (
   <div>
 
-<<<<<<< HEAD
     <h1 className="app-title">The Shows</h1>
-=======
+
     <h1>The Shows</h1>
->>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
 
     <AuthRoute path="/login" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
     <ProtectedRoute path="/greeting" component={Greeting} />
     <Route exact path="/venues" component={VenuesIndexContainer} />
     <Route exact path="/venues/:venueId" component={VenueShowContainer} />
-<<<<<<< HEAD
+
     <Route path="/" component={ShowsIndexContainer} />
-=======
+
     <Route path="/shows" component={ShowsIndexContainer} />
->>>>>>> 793f10e6e0bdb20deaea601b78aa1cd9c1f24468
 
   </div>
 );
