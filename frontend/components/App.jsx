@@ -20,14 +20,13 @@ const App = () => (
 
     <h1 className="app-title">The Shows</h1>
 
+    <Route path="/" component={ShowsIndexContainer} />
+
     <AuthRoute path="/login" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
     <ProtectedRoute path="/greeting" component={Greeting} />
     <Route exact path="/venues" component={VenuesIndexContainer} />
     <Route exact path="/venues/:venueId" component={VenueShowContainer} />
-
-    <Route path="/" component={ShowsIndexContainer} />
-
     <Route path="/shows" component={ShowsIndexContainer} />
 
   </div>

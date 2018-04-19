@@ -11,6 +11,7 @@
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    opacity: .99;
   }
 
   .filter-time-checkbox input[type=checkbox] {
@@ -23,6 +24,7 @@
   .filter-time-checkbox input[type=checkbox]:checked {
     background-color: #c4f3a4;
     outline-color: white;
+    opacity: .99;
   }
 
   .filter-time-checkbox input[type=checkbox]:focus {
@@ -34,13 +36,77 @@
     left: 34%;
   }
 
+  .filter-time-checkbox p {
+    display: none;
+    z-index: -1;
+  }
+
 }
 
 
 @media (min-width: 641px) {
+
   .filter-form-container {
-    width: 100%;
+    width: 660px;
     height: 100px;
-    background: gray;
+    margin: auto;
   }
+
+  .filter-time {
+    display: flex;
+    padding-top: 23px;
+  }
+
+  .filter-time-checkbox {
+    border: 1px #e6e6e6 solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,.09);
+  }
+
+  .filter-time-checkbox input[type=checkbox] {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .filter-time-checkbox input[type=checkbox]:checked {
+    background-color: #c4f3a4;
+    border-radius: 10px;
+    outline-style: none;
+  }
+
+  .filter-time-checkbox input[type=checkbox]:focus {
+    outline-style: none;
+  }
+
+  .filter-time-checkbox label {
+    position: absolute;
+    top: 11%;
+  }
+
+  #label-now {
+    left: 24%
+  }
+
+  #label-soon {
+    left: 21%
+  }
+
+  #label-later {
+    left: 20%
+  }
+
+  .filter-time-checkbox p {
+
+  }
+
 }
